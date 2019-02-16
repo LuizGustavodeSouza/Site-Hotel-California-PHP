@@ -1,0 +1,218 @@
+*{
+
+padding:0px;
+margin:0px;
+}
+
+
+
+body{
+	background-image: url('../img/background.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-family: 'Dosis', sans-serif;
+	margin-top: 80px;
+}
+
+.minha-posicao{
+  
+  display: inline-block;
+  padding-left: -6px;
+  padding-right: 3px;
+  
+}
+
+.padding-bottom{
+ 	 padding-bottom: 20px;
+}
+
+.div-inline{
+  
+  display: inline-block; 
+  width: 200px; 
+  position: fixed; 
+  margin: 0px 10px 10px; 
+  z-index: 9999; 
+  right: -50px; 
+  bottom: 0px;
+  
+}
+
+.doacao-inline{
+ 	display: inline-block !important; 
+}
+
+.div-inline a:hover,.div-inline a:visited,.div-inline a:active{
+  
+  color: white;
+  
+}
+
+
+
+.btn-imge{
+  color: white;
+  background-image: url("https://png.pngtree.com/element_pic/00/16/06/1757641dba68c19.jpg") !important; 
+  background-size: 100% 100%;
+}
+
+img.margin-top{
+
+  margin-top: -15px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+.padding-bottom{
+
+	padding-bottom: 45px !important;
+
+}
+
+.espaco-right{
+
+	margin-right: 6px !important;
+}
+
+ul.meu-menu li a{
+
+	font-weight: bold !important;
+}
+
+#apresentacao,#servicos,#footer,#novidades{
+font-size: 17px;
+}
+
+@media (max-width: 768px) {
+.container-cadastro{
+	width: 90%;
+	margin: 0 auto;
+	
+}
+}
+
+.container-login{
+	width: 350px;
+	margin: 0 auto;
+}
+
+.tamanho-login{
+	height: 1000px;
+}
+.meu-bloco-inline{
+
+	display: inline-flex;
+	
+}
+
+.bloco-block{
+	width: 100px;
+}
+
+h4.desenvolvedores{
+	font-weight: bold;
+
+}
+
+p.desenvolvedores{
+	margin-top: -5px;
+
+}
+
+img.minha-img{
+	width: 140px;
+	height: 140px;
+	
+}
+
+.btn-margin-left{
+	margin-left: 5px;
+	
+}
+strong.largura{
+	width: 150px;
+}
+
+.largunra{
+	width: 100%;
+}
+
+.container-coment{
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 15px;
+	border-radius: 10px;
+	padding-bottom: 100px;
+}
+
+.padding-bottom{
+	padding-bottom: 15px;
+
+}
+
+.margin-left{
+	margin-left: 10px;
+}
+
+.espacamento{
+	
+	margin-top: 30px;
+	padding-top: 30px;
+	
+}
+
+h5.center{
+	text-align: center;
+}
+
+span.anuncio{
+
+
+	    font-size: 17px;
+}
+
+.bold{
+	width: 100px;
+}
+
+.separacao{
+
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+}
+
+p.right{
+	text-align: right;
+}
+
+
+.tamanho{
+	height: 200px;
+	
+}
+
+h3.center, h1.center{
+	text-align: center;
+	font-size: 500;
+}
+
+.margin-top{
+	margin-top: 20px;
+}
+
+.border-right{
+	border-right: thin silver solid;
+}
+
+form.margin-top{
+	margin-top: 30px;
+}

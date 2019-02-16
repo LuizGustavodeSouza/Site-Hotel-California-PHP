@@ -1,0 +1,74 @@
+CREATE DATABASE hotel;
+USE hotel;
+
+CREATE TABLE login (
+  
+loginID int(3) auto_increment NOT NULL,
+  
+loginNome varchar(50) NOT NULL,
+  
+loginRg varchar(20) NOT NULL,
+  
+loginCpf varchar(20) NOT NULL,
+  
+loginEmail varchar(50) NOT NULL,
+  
+loginSenha varchar(50) NOT NULL,
+  
+loginTelefone varchar(14) NOT NULL,
+  
+loginCelular varchar(15) DEFAULT NULL,
+  
+loginCep varchar(15) NOT NULL,
+  
+loginEndereco varchar(50) NOT NULL,
+  
+loginNumero int(5) NOT NULL,
+  
+loginBairro varchar(20) NOT NULL,
+  
+loginCidade varchar(15) NOT NULL,
+  
+loginUf varchar(2) NOT NULL,
+
+
+PRIMARY KEY (loginID));
+
+
+CREATE TABLE suite(
+
+suiteID int(3) auto_increment NOT NULL,
+suiteNome varchar(20) NOT NULL,
+suiteDesc varchar(255) NOT NULL,
+suiteDif varchar(100) NOT NULL,
+suitePreco double NOT NULL,
+SuiteDisp char NOT NULL,
+
+PRIMARY KEY (suiteID));
+
+
+
+CREATE TABLE reserva(
+
+reservaID int(3) auto_increment NOT NULL,
+reservaCliente varchar(50) NOT NULL,
+reservaRG varchar(12) NOT NULL,
+reservaSuite varchar(20) NOT NULL,
+reservaDias int(3) NOT NULL,
+reservaPreco double NOT NULL,
+reservaPagamento varchar(30) NOT NULL,
+reservaStatus varchar(30) NOT NULL,
+
+PRIMARY KEY (reservaID));
+
+
+
+
+
+INSERT INTO login VALUES(null,'Administrador Padrão','45.367.341-9','895,736,618-92','pro.infotech9@gmail.com', md5('grupouninove9'),'(11) 3856-2975','(11) 94773-4967', '07835-470','Av. Nações Unidades', 2557, 'Santo Amaro', 'São Paulo', '2');
+INSERT INTO login VALUES(null,'Kauan Barros','49.234.201.7','547.236.520-98','orlandokauan.barros@gmail.com', md5('38416256'),'(11) 5896-2647','(11) 94233-5687', '058-64720','Rua das Perobeiras', 364, 'Valo Velho', 'São Paulo', '1');
+INSERT INTO login VALUES(null,'Kayo Henrique','45.367.341-9','895,736,618-92','kayo@henrique.com', md5('123'),'(11) 3856-2975','(11) 94773-4967', '07835-470','Av. Nações Unidades', 2557, 'Santo Amaro', 'São Paulo', '2');
+
+INSERT INTO suite VALUES(null, 'Suite Primavera', 'A Suite Primavera possui amplo espaço para você curtir com toda a família os benefícios que o nosso hotel pode oferecer.','Banheira com Hidromassagem.', 89.90, 1);
+
+INSERT INTO suite VALUES(null, 'Suite Beira-Mar', 'A Beira Mar conta com uma vista extraordinária para a praia de Ipanema, ideal para quem busca diversão e dias ensolarados.','Bar e área de jogos.', 129.90, 1);
